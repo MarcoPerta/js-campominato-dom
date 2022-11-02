@@ -42,42 +42,37 @@ function play(){
     switch(opzioni){
         case '1' :
 
-          function creazioneQuadrato(){
-
-            //   div.innerHTML = num; 
+          function creazioneQuadrato(num){ 
 
               const div = document.createElement('div');
               div.classList.add('quadrato');
+              div.innerHTML = num;
               return div;
     
           }
           console.log(creazioneQuadrato())
     
-          for (let i=0; i<100; i++){
+          for (let i=1; i<=100; i++){
     
-              var elementoCorrente = creazioneQuadrato();
+              var elementoCorrente = creazioneQuadrato(i);
         
     
               elementoCorrente.addEventListener('click', function(){
                 //   this.classList.toggle('attiva');
                 //   console.log(`${i+1}`);
                 
-                //   let somma = 0;
-                //   if(numeri === bombe){
-                //     this.classList.add('attiva');
-                //     console.log(`il tuo punteggio è ${somma+1}`);
-                //   }
-                //   else{
-                //     this.classList.add('bomba');
-                //     console.log(`mi dispiace hai perso: il tuo punteggio è ${somma+1}`);
-                //   }
+                  let somma = 0;
+                  if(numeri === bombe){
+                    this.classList.add('attiva');
+                    console.log(`il tuo punteggio è ${somma+1}`);
+                  }
+                  else{
+                    this.classList.add('bomba');
+                    console.log(`mi dispiace hai perso: il tuo punteggio è ${somma+1}`);
+                  }
               })
     
-              let numeri = document.createElement("span");
-              numeri.innerText = `${i+1}`;
-    
               griglia.append(elementoCorrente);
-              elementoCorrente.append(numeri);
           }
 
           let bombe = [];
