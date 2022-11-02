@@ -46,6 +46,10 @@ span{
     background-color: green;
 }
 
+.bomba{
+    background-color: red;
+}
+
 .form-select{
     width: 50%!important;
 }

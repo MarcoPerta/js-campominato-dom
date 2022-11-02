@@ -44,6 +44,8 @@ function play(){
 
           function creazioneQuadrato(){
 
+            //   div.innerHTML = num; 
+
               const div = document.createElement('div');
               div.classList.add('quadrato');
               return div;
@@ -57,8 +59,18 @@ function play(){
         
     
               elementoCorrente.addEventListener('click', function(){
-                  this.classList.toggle('attiva');
-                  console.log(`${i+1}`)
+                //   this.classList.toggle('attiva');
+                //   console.log(`${i+1}`);
+                
+                //   let somma = 0;
+                //   if(numeri === bombe){
+                //     this.classList.add('attiva');
+                //     console.log(`il tuo punteggio è ${somma+1}`);
+                //   }
+                //   else{
+                //     this.classList.add('bomba');
+                //     console.log(`mi dispiace hai perso: il tuo punteggio è ${somma+1}`);
+                //   }
               })
     
               let numeri = document.createElement("span");
@@ -70,12 +82,13 @@ function play(){
 
           let bombe = [];
           for( let y=0; y<16; y++ ){
-            bombe.push(Math.round(Math.random()*100)+1)
-            if 
+            let random = Math.round(Math.random()*100)+1;
+            bombe.push(random);
+            // if (bombe === bombe.includes(random)){
+            //     return false; 
+            // }
           }
           console.log(bombe)
-
-
 
           break ;
 
