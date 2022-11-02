@@ -81,13 +81,13 @@ function play(){
           }
 
           let bombe = [];
-          for( let y=0; y<16; y++ ){
+           
+          while(bombe.length<16){
             let random = Math.round(Math.random()*100)+1;
-            bombe.push(random);
-            // if (bombe === bombe.includes(random)){
-            //     return false; 
-            // }
-          }
+            if(!bombe.includes(random)){
+                bombe.push(random);
+            }
+            }
           console.log(bombe)
 
           break ;
