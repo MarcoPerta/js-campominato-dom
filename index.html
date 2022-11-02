@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Campo minato</title>
+</head>
+<body>
+    <header>
+
+        <div class="container-fluid d-flex align-items-center justify-content-between p-3">
+            <div class="d-flex align-items-center">
+                <img src="img/Logo.png" alt="">
+                <h2 class="mx-3"><strong>Campo minato</strong></h2>
+            </div>
+            <div class="d-flex align-items-center mx-1">
+                <span class="mx-1">Difficoltà:</span>
+                <select class="form-select" aria-label="Default select example" id="values">
+                    <option value="1">Easy</option>
+                    <option value="2">Medium</option>
+                    <option value="3">Hard</option>
+                  </select>
+                <button type="button" class="btn btn-primary mx-1" id="btn">Play</button>
+            </div>
+        </div>
+        
+    </header>
+
+    <main class="bg-azure">
+        <div class="container d-flex flex-wrap d-none text-center p-3" id="griglia">
+            
+        </div>
+    </main>
+    
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

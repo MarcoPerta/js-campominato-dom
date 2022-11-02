@@ -1,0 +1,51 @@
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    height: 15%;
+}
+
+main{
+    height: 85%;
+}
+
+#griglia{
+    height: 100%;
+}
+
+.bg-azure{
+   background-color: #7FFFD4; 
+}
+
+span{
+    vertical-align: middle;
+}
+
+.quadrato{
+    width: calc(100%/10);
+    height: calc(100%/10);
+    border: 1px solid black;
+    align-items: center;
+}
+
+.quadratoM{
+    width: calc(100%/9);
+    height: calc(100%/9);
+    border: 1px solid black;
+}
+
+.quadratoH{
+    width: calc(100%/7);
+    height: calc(100%/7);
+    border: 1px solid black;
+}
+
+.attiva{
+    background-color: green;
+}
+
+.form-select{
+    width: 50%!important;
+}
